@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  padding: 20px;
+  background: #f7e8d8;
+  height: 100%;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 20px;
+  /*grid-template-columns: 3fr 1fr;
+  gap: 50px;
+  align-items: start;*/
+}
+
+.contenu {
+  flex: 3;
+}
+
+.your-cart {
+  flex: 1;
+  background: white;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-align: center;
+  height: fit-content;
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.rouge {
+  color: rgb(255, 80, 80);
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.Desserts {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f7e8d8;
+  align-items: center;
+  width: 210px;
+  position: relative;
+  flex: 1 1 calc(33.3% - 20px);
+}
+
+.bouton {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #afaeae;
+  border-radius: 20px;
+  background-color: white;
+  width: 70%;
+  padding: 10px 0;
+  font-family: "Segoe UI", Calibri, sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button {
+  margin-top: -100px;
+}
+
+button:hover {
+  background-color: rgb(255, 130, 0);
+  color: white;
+}
+
+img {
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 180px;
+}
+
+.price {
+  color: rgb(225, 35, 5);
+}
+
+.definition {
+  color: rgb(120, 120, 120);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  .total {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
